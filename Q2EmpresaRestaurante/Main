@@ -1,0 +1,16 @@
+package empresarestaurante;
+
+public class EmpresaRestaurante {
+
+    public static void main(String[] args) {
+        
+     // Criação do Método Construtor
+     Restaurante rest1 = new Restaurante();
+     
+     // Teste dos Métodos
+     rest1.Input();
+     rest1.Print();
+      
+    }
+    
+}
