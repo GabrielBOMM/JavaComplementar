@@ -1,0 +1,55 @@
+package empresarestaurante;
+import javax.swing.JOptionPane;
+
+abstract class Empresa {
+    
+    // Atributos
+    private String nomeEmpresa;
+    private String endereco;
+    private String cidade;
+    private String estado;
+    private String cep;
+    private String telefone;
+    
+    // Método Construtor 1
+    public Empresa(){
+        
+    }
+    
+    // Método Construtor 2
+    public Empresa(String nomeEmpresa, String endereco, String cidade, String estado, String cep, String telefone){
+        
+        this.nomeEmpresa = nomeEmpresa;
+        this.endereco = endereco;
+        this.cidade = cidade;
+        this.estado = estado;
+        this.cep = cep;
+        this.telefone = telefone;
+  
+    }
+    
+    // Método de Interface
+    public void Input(){
+        
+        nomeEmpresa = JOptionPane.showInputDialog("Digite o Nome da Empresa:");
+        endereco = JOptionPane.showInputDialog("Digite o Endereço:");
+        cidade = JOptionPane.showInputDialog("Digite a Cidade");
+        estado = JOptionPane.showInputDialog("Digite o Estado:");
+        cep = JOptionPane.showInputDialog("Digite o CEP:");
+        telefone = JOptionPane.showInputDialog("Digite o Telefone");
+                       
+    }
+    
+    // Método Print
+    public void Print(){
+        
+        JOptionPane.showMessageDialog(null, "O Nome da Empresa é: " + nomeEmpresa);
+        JOptionPane.showMessageDialog(null, "O Endereço é: " + endereco);
+        JOptionPane.showMessageDialog(null, "A Cidade é: " + cidade);
+        JOptionPane.showMessageDialog(null, "O Estado é: " + estado);
+        JOptionPane.showMessageDialog(null, "O CEP é: " + cep);
+        JOptionPane.showMessageDialog(null, "O Telefone é: " + telefone);
+        
+    }
+    
+}
