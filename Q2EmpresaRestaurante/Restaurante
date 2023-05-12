@@ -1,0 +1,46 @@
+package empresarestaurante;
+
+import javax.swing.JOptionPane;
+
+public class Restaurante extends Empresa {
+    
+   
+    // Atributos
+    private String comida;
+    private String precoComida;
+    
+    //Métodos Construtor 1
+    public Restaurante(){
+        
+    }
+    
+    // Método Construtor 2
+    public Restaurante(String nomeEmpresa, String endereco, String cidade, String estado, String cep, String telefone, String comida, String precoComida){
+        super(nomeEmpresa, endereco, cidade, estado, cep, telefone);
+        this.comida = comida;
+        this.precoComida = precoComida;
+    }
+    
+    // Método Intup
+    @Override
+    public void Input(){
+        
+        super.Input();
+        comida = JOptionPane.showInputDialog("Digite a Comida");
+        precoComida = JOptionPane.showInputDialog("Digite o Preço da Comida:");
+        
+                       
+    }
+    
+    // Método Print
+    @Override
+    public void Print(){
+        
+        super.Print();
+        JOptionPane.showMessageDialog(null, "O Nome da Comida é: " + comida);
+        JOptionPane.showMessageDialog(null, "O Preço da Comida é:" + precoComida);
+        
+                       
+    }
+    
+}
