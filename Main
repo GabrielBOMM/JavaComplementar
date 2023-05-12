@@ -1,0 +1,29 @@
+package retangulo;
+
+public class Main {
+
+
+    public static void main(String[] args) {
+        
+        // Objeto
+        Rectangle rect1 = new Rectangle();
+        
+        // Teste
+        
+        // Teste dos Sets
+        rect1.setLength(10);
+        rect1.setWidth(5);
+        
+        // Teste dos Gets
+        System.out.println("O Valor da Altura é: " + rect1.getLength());
+        System.out.println("O Valor da Largura é: " + rect1.getWidth());
+        
+        // Teste do Perímetro
+        System.out.println("O Valor do Perímetro é: " + rect1.calculaPerimetro());
+        
+        // Teste da Área
+        System.out.println("O Valor da Area é: " + rect1.calculaArea());
+        
+    }
+    
+}
