@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+public class Motor {
+    
+    Scanner scanner = new Scanner(System.in);
+    
+    // Atributos
+    private int NumCilindro;
+    private int Potencia;
+    
+    // Construtor 1
+    public Motor(){
+        
+        NumCilindro = 0;
+        Potencia = 0;
+        
+    }
+    
+    // Construtor 2
+    public Motor(int NumCilindro, int Potencia){
+        
+        this.NumCilindro = NumCilindro;
+        this.Potencia = Potencia;
+        
+    }
+    
+    // Entrada de Dados
+    public void InsertData(){
+        
+
+        System.out.println("Cilíndros: ");
+        NumCilindro = scanner.nextInt();
+        System.out.println("Potência: ");
+        Potencia = scanner.nextInt();
+        
+    }
+    
+    // Saída de Dados
+    public void Print(){
+        
+        System.out.println("\nCilíndros: " + NumCilindro + "\nPotência: " + Potencia);
+        
+    }
+
+    
+    
+    
+}
