@@ -1,0 +1,50 @@
+public class Caminhao extends CarroPasseio{
+   
+    // Atributos
+    private int TonMax;
+    private int AltMax;
+    private int Comprimento;
+    
+    // Construtor 1
+    public Caminhao(){
+        
+    }
+    
+    // Construtor 2
+    public Caminhao(int NumCilindro, int Potencia, int pesoQuilos, int velocidade, int preco, String cor, String Modelo, int TonMax, int AltMax, int Comprimento){
+        
+        super(NumCilindro, Potencia, pesoQuilos, velocidade, preco, cor, Modelo);
+        this.TonMax = TonMax;
+        this.AltMax = AltMax;
+        this.Comprimento = Comprimento;
+             
+    }
+    
+    // Entrada de Dados
+    @Override
+    public void InsertData(){
+        
+        super.InsertData();
+        System.out.println("Toneladas: ");
+        TonMax = scanner.nextInt();
+        System.out.println("Altura: ");
+        AltMax = scanner.nextInt();
+        System.out.println("Comprimento: ");
+        Comprimento = scanner.nextInt();
+        
+        
+        
+    }
+    
+    // Saída de Dados
+    @Override
+    public void Print(){
+        
+        super.Print();
+        System.out.println("Toneladas: " + TonMax);
+        System.out.println("Altura: " + AltMax );
+        System.out.println("Comprimento: " + Comprimento);
+        
+    }
+    
+}
