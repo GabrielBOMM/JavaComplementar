@@ -1,0 +1,47 @@
+public class CarroPasseio extends Veiculo{
+    
+    // Atributos
+    private String cor;
+    private String Modelo;
+    
+    // Construtor 1
+    public CarroPasseio(){
+        
+    }
+    
+    // Construtor 2
+    public CarroPasseio(int NumCilindro, int Potencia, int pesoQuilos, int velocidade, int preco, String cor, String Modelo){
+        
+        super(NumCilindro, Potencia, pesoQuilos, velocidade, preco);
+        this.cor = cor;
+        this.Modelo = Modelo;
+              
+    }
+    
+    // Entrada de Dados
+    @Override
+    public void InsertData(){
+        
+        super.InsertData();
+        System.out.println("Modelo: ");
+        Modelo = scanner.nextLine();
+        System.out.println("Cor: ");
+        cor = scanner.nextLine();
+        
+        
+        
+        
+    }
+    
+    // Saída de Dados
+    @Override
+    public void Print(){
+        
+        super.Print();
+        System.out.println("Cor: " + cor);
+        System.out.println("Modelo: " + Modelo );
+        
+        
+    }
+}
+
