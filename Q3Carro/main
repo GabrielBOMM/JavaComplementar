@@ -1,0 +1,12 @@
+public class main {
+
+    public static void main(String[] args) {
+
+        Caminhao cam1 = new Caminhao();
+        
+        cam1.InsertData();
+        cam1.Print();
+           
+    }
+    
+}
