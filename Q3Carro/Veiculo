@@ -1,0 +1,48 @@
+public class Veiculo extends Motor {
+    
+    // Atributos
+    private int pesoQuilos;
+    private int velocidade;
+    private int preco;
+    
+    // Construtor 1
+    public Veiculo(){
+        
+    }
+    
+    // Construtor 2
+    public Veiculo(int NumCilindro, int Potencia, int pesoQuilos, int velocidade, int preco){
+        
+        super(NumCilindro, Potencia);
+        this.pesoQuilos = pesoQuilos;
+        this.velocidade = velocidade;
+        this.preco = preco;
+        
+    }
+    
+    // Entrada de Dados
+    @Override
+    public void InsertData(){
+        
+        super.InsertData();
+        System.out.println("Peso: ");
+        pesoQuilos = scanner.nextInt();
+        System.out.println("Velocidade: ");
+        velocidade = scanner.nextInt();
+        System.out.println("Preço: ");
+        preco = scanner.nextInt();
+        
+       
+    }
+    
+    // Saída de Dados
+    @Override
+    public void Print(){
+        
+        super.Print();
+        System.out.println("Peso: " + pesoQuilos);
+        System.out.println("Velocidade: " + velocidade);
+        System.out.println("Preço: " + preco);
+        
+    }
+}
